@@ -241,7 +241,7 @@ namespace AdDepartmentClaimsProvider
             SearchResultCollection foundEntities = null;
             SPSecurity.RunWithElevatedPrivileges(() =>
                 {
-                    foundEntities = GetDirectoryEntities(searchPattern);
+                    foundEntities = GetDirectoryEntities(searchPattern+"*");
                     if (foundEntities != null)
                     {
                         foreach (SearchResult entity in foundEntities)
@@ -403,7 +403,7 @@ namespace AdDepartmentClaimsProvider
 
         SearchResultCollection GetDirectoryEntities(string SearchPattern)
         {
-            return GetUserEntities(string.Format("({0}>={1})", DepartmentPropertyName, SearchPattern));
+            return GetUserEntities(string.Format("({0}={1})", DepartmentPropertyName, SearchPattern));
             
         }
         SearchResultCollection GetDirectoryEntities()
