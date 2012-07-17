@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="9052e3d0-45c6-44f9-b385-929eebbae4eb" solutionId="9052e3d0-45c6-44f9-b385-929eebbae4eb" resetWebServer="false" name="DepartmentClaimsProvider" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <assemblies>
+    <projectOutputAssembly location="AdDepartmentClaimsProvider.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\AdDepartmentClaimsProvider\AdDepartmentClaimsProvider.csproj" />
+  </assemblies>
+  <features>
+    <featureReference itemId="5cc81672-a337-40a4-958c-4eda0dcba2c4" />
+  </features>
+</package>
